@@ -1,0 +1,580 @@
+10
+
+dir
+34389
+svn://svn.openwrt.org/openwrt/branches/packages_12.09/utils
+svn://svn.openwrt.org/openwrt
+
+
+
+2012-10-31T21:24:30.741894Z
+34048
+cshore
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3c298f89-4303-0410-b956-a3cf2f4a3e73
+
+loop-aes
+dir
+
+lcd4linux-tew673gru
+dir
+
+mtd-utils
+dir
+
+pcsc-lite
+dir
+
+wx200d
+dir
+
+daemontools
+dir
+
+bc
+dir
+
+pciutils
+dir
+
+ipmitool
+dir
+
+watchcat
+dir
+
+empty
+dir
+
+time
+dir
+
+cdparanoia
+dir
+
+valgrind
+dir
+
+usbutils
+dir
+
+heyu
+dir
+
+flashrom
+dir
+
+dmidecode
+dir
+
+remind
+dir
+
+boxbackup
+dir
+
+pwgen
+dir
+
+gnupg
+dir
+
+lvm2
+dir
+
+calvaria
+dir
+
+cryptsetup
+dir
+
+dtach
+dir
+
+rng-tools
+dir
+
+ntfsprogs
+dir
+
+lcdproc
+dir
+
+avrusbboot
+dir
+
+rcs
+dir
+
+bluelog
+dir
+
+tmux
+dir
+
+tesseract
+dir
+
+logrotate
+dir
+
+zile
+dir
+
+open2300
+dir
+
+lcd4linux
+dir
+
+freecwmp
+dir
+
+taskwarrior
+dir
+
+petitboot
+dir
+
+restorefactory
+dir
+
+cksfv
+dir
+
+hplip
+dir
+
+powertop
+dir
+
+bluez-utils
+dir
+
+ntfs-3g
+dir
+
+ink
+dir
+
+bemused
+dir
+
+bash-completion
+dir
+
+zoneinfo
+dir
+
+picocom
+dir
+
+minicom
+dir
+
+dir300-flash
+dir
+
+dbus
+dir
+
+usb-modeswitch
+dir
+
+fortune-mod
+dir
+
+tcsh
+dir
+
+xdelta3
+dir
+
+setpwc
+dir
+
+dt
+dir
+
+coreutils
+dir
+
+i2c-tools
+dir
+
+alsa-utils
+dir
+
+sierra-pcmcia
+dir
+
+dstat
+dir
+
+gnokii
+dir
+
+tar
+dir
+
+gnuplot
+dir
+
+cmdpad
+dir
+
+gawk
+dir
+
+maemo-kexec
+dir
+
+mc
+dir
+
+gadgetfs-test
+dir
+
+calcurse
+dir
+
+lm-sensors
+dir
+
+mg
+dir
+
+hd-idle
+dir
+
+btrfs-progs
+dir
+
+crypto-tools
+dir
+
+screen
+dir
+
+byobu
+dir
+
+ssldump
+dir
+
+unrar
+dir
+
+reiserfsprogs
+dir
+
+psmisc
+dir
+
+devmem2
+dir
+
+cwiid
+dir
+
+bonnie++
+dir
+
+ccid
+dir
+
+usb-modeswitch-data
+dir
+
+unzip
+dir
+
+devio
+dir
+
+microcom
+dir
+
+mgetty
+dir
+
+sed
+dir
+
+upx
+dir
+
+joe
+dir
+
+fxload
+dir
+
+fancontroled
+dir
+
+haserl
+dir
+
+firmwarehotplug
+dir
+
+pipacs
+dir
+
+kmemtrace-user
+dir
+
+shadow
+dir
+
+macchanger
+dir
+
+lirc
+dir
+
+avrdude
+dir
+
+sg3-utils
+dir
+
+boblight
+dir
+
+setserial
+dir
+
+bsdiff
+dir
+
+rrdcollect
+dir
+
+dialog
+dir
+
+dosfstools
+dir
+
+mksh
+dir
+
+clish
+dir
+
+haveged
+dir
+
+anyremote
+dir
+
+triggerhappy
+dir
+
+memtester
+dir
+
+schedtools
+dir
+
+lmbench
+dir
+
+bluez-hcidump
+dir
+
+deco
+dir
+
+sysstat
+dir
+
+klish
+dir
+
+pcmciautils
+dir
+
+dash
+dir
+
+acpid
+dir
+
+strace
+dir
+
+smartmontools
+dir
+
+mdadm
+dir
+
+md5deep
+dir
+
+usbmuxd
+dir
+
+scponly
+dir
+
+dfu-util
+dir
+
+collectd
+dir
+
+testusb
+dir
+
+disktype
+dir
+
+rsyncrypto
+dir
+
+rdiff-backup
+dir
+
+input-utils
+dir
+
+sane-backends
+dir
+
+sispmctl
+dir
+
+msr-tools
+dir
+
+wview
+dir
+
+digitemp
+dir
+
+lsof
+dir
+
+huaweiaktbbo
+dir
+
+less
+dir
+
+wattsup
+dir
+
+owfs
+dir
+
+event_test
+dir
+
+nvramtool
+dir
+
+stress
+dir
+
+lrzsz
+dir
+
+pv
+dir
+
+rrdtool
+dir
+
+sdparm
+dir
+
+bzip2
+dir
+
+cpusage
+dir
+
+gpiotoggling
+dir
+
+vim
+dir
+
+nano
+dir
+
+lilo
+dir
+
+pps-tools
+dir
+
+tcpser
+dir
+
+wifitoggle
+dir
+
+fowsr
+dir
+
+ap51-flash
+dir
+
+foxboard-utils
+dir
+
+zip
+dir
+
+ccrypt
+dir
+
+at
+dir
+
+procps
+dir
+
+io
+dir
+
+bandwidthd
+dir
+
+pwcrypt
+dir
+
+gzip
+dir
+
+psplash
+dir
+
+hdparm
+dir
+
+oww
+dir
+
+bash
+dir
+
