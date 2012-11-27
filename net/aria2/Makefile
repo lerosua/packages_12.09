@@ -7,12 +7,12 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=aria2
-PKG_VERSION:=1.15.1
+PKG_VERSION:=1.15.2
 PKG_RELEASE:=1
 
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.bz2
 PKG_SOURCE_URL:=@SF/aria2
-PKG_MD5SUM:=a749a1f7cfe03a7518630d2310267c42
+PKG_MD5SUM:=211f1e5c1fd28b788e687cb2d851812a
 PKG_INSTALL:=1
 
 include $(INCLUDE_DIR)/package.mk
@@ -30,6 +30,10 @@ endef
 define Package/aria2/description
  aria2 is a lightweight multi-protocol & multi-source command-line download
  utility
+endef
+
+define Package/aria2/conffiles
+/etc/config/aria2
 endef
 
 CONFIGURE_ARGS += \
