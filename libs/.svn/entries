@@ -1,7 +1,7 @@
 10
 
 dir
-34389
+34398
 svn://svn.openwrt.org/openwrt/branches/packages_12.09/libs
 svn://svn.openwrt.org/openwrt
 
@@ -71,52 +71,52 @@ dir
 neon
 dir
 
-protobuf
-dir
-
 libspe2
 dir
 
-gperf
-dir
-
-postgresql
+protobuf
 dir
 
 libnetfilter-conntrack
 dir
 
-libiconv-full
+postgresql
+dir
+
+gperf
 dir
 
 cyrus-sasl
 dir
 
-re
+libiconv-full
 dir
 
 id3lib
 dir
 
-dbus-glib
+re
 dir
 
 bluez-libs
 dir
 
-tcp_wrappers
-dir
-
-sctp
+dbus-glib
 dir
 
 libxml2
 dir
 
-c-ares
+sctp
+dir
+
+tcp_wrappers
 dir
 
 liboil
+dir
+
+c-ares
 dir
 
 newt
@@ -218,16 +218,16 @@ dir
 elfutils
 dir
 
-wxbase
-dir
-
 cgilib
 dir
 
-libdaq
+wxbase
 dir
 
 libconfig
+dir
+
+libdaq
 dir
 
 glib2
@@ -251,10 +251,10 @@ dir
 spandsp
 dir
 
-credis
+howl
 dir
 
-howl
+credis
 dir
 
 libsndfile
@@ -263,31 +263,31 @@ dir
 gnutls
 dir
 
-libgssapi
+libsdl_mixer
 dir
 
 glib
 dir
 
-libsdl_mixer
-dir
-
-libcelt
+libgssapi
 dir
 
 keynote
 dir
 
+libcelt
+dir
+
 libnfnetlink
 dir
 
-ftplib
+libmodbus
 dir
 
 libvorbisidec
 dir
 
-libmodbus
+ftplib
 dir
 
 argtable
@@ -299,10 +299,10 @@ dir
 ortp
 dir
 
-libdbi
+gsl
 dir
 
-gsl
+libdbi
 dir
 
 gsm
@@ -317,10 +317,10 @@ dir
 xmpp4r
 dir
 
-libffi
+opal
 dir
 
-opal
+libffi
 dir
 
 libnfc
@@ -347,22 +347,22 @@ dir
 fcgi
 dir
 
-libtheora
-dir
-
-gdbm
+libdirectfb
 dir
 
 libsdl
 dir
 
-libdirectfb
+gdbm
 dir
 
-libtasn1
+libtheora
 dir
 
 nacl
+dir
+
+libtasn1
 dir
 
 argp-standalone
@@ -371,28 +371,28 @@ dir
 protobuf-c
 dir
 
-popt
+apr
 dir
 
 libexif
 dir
 
-apr
-dir
-
-freetype
+popt
 dir
 
 libosip2
 dir
 
-speex
+freetype
+dir
+
+libnids
 dir
 
 libsamplerate
 dir
 
-libnids
+speex
 dir
 
 libnatpmp
@@ -401,10 +401,10 @@ dir
 libimobiledevice
 dir
 
-libamsel
+libmad
 dir
 
-libmad
+libamsel
 dir
 
 sysfsutils

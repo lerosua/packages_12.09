@@ -1,7 +1,7 @@
 10
 
 dir
-34389
+34398
 svn://svn.openwrt.org/openwrt/branches/packages_12.09/multimedia
 svn://svn.openwrt.org/openwrt
 
@@ -35,10 +35,10 @@ dir
 gst-plugins-base
 dir
 
-fswebcam
+ushare
 dir
 
-ushare
+fswebcam
 dir
 
 gstreamer
@@ -62,10 +62,10 @@ dir
 ftpd-topfield
 dir
 
-darkice
+gst-plugins-good
 dir
 
-gst-plugins-good
+darkice
 dir
 
 ffmpeg

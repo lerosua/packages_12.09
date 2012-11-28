@@ -1,7 +1,7 @@
 10
 
 dir
-34389
+34398
 svn://svn.openwrt.org/openwrt/branches/packages_12.09/lang
 svn://svn.openwrt.org/openwrt
 
@@ -26,10 +26,10 @@ hcg
 
 3c298f89-4303-0410-b956-a3cf2f4a3e73
 
-python
+ruby
 dir
 
-ruby
+python
 dir
 
 logilab-astng
@@ -53,16 +53,16 @@ dir
 perl-html-parser
 dir
 
-python-crypto
-dir
-
-4th
+perl-uri
 dir
 
 php-pear-db
 dir
 
-perl-uri
+4th
+dir
+
+python-crypto
 dir
 
 lsqlite3
@@ -119,43 +119,43 @@ dir
 perl-dbi
 dir
 
-perl-html-tree
-dir
-
 python-mimms
 dir
 
-pyusb
+perl-html-tree
 dir
 
 perl
 dir
 
-python-sip
+pyusb
 dir
 
-python-dbus
+python-sip
 dir
 
 luasec
 dir
 
-arm
-dir
-
-perl-compress-bzip2
+python-dbus
 dir
 
 perl-lockfile-simple
 dir
 
-python-curl
+perl-compress-bzip2
+dir
+
+arm
+dir
+
+perl-www
 dir
 
 psycopg
 dir
 
-perl-www
+python-curl
 dir
 
 luafilesystem
@@ -176,22 +176,22 @@ dir
 pyrrd
 dir
 
-python-eeml
+luasql
 dir
 
 urbi
 dir
 
-luasql
+python-eeml
 dir
 
 python-ifconfig
 dir
 
-luaposix
+cython
 dir
 
-cython
+luaposix
 dir
 
 python-webpy
@@ -206,10 +206,10 @@ dir
 pyyaml
 dir
 
-php-pear-xmlrpc
+perl-net-telnet
 dir
 
-perl-net-telnet
+php-pear-xmlrpc
 dir
 
 python-django

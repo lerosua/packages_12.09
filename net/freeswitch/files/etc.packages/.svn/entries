@@ -1,7 +1,7 @@
 10
 
 dir
-34389
+34398
 svn://svn.openwrt.org/openwrt/branches/packages_12.09/net/freeswitch/files/etc.packages
 svn://svn.openwrt.org/openwrt
 
@@ -29,22 +29,22 @@ mazilo
 pocketsphinx
 dir
 
-tts_commandline
+say-ru
 dir
 
 syslog
 dir
 
-say-ru
+tts_commandline
 dir
 
 logfile
 dir
 
-say-de
+rtmp
 dir
 
-rtmp
+say-de
 dir
 
 cdr_csv
@@ -59,16 +59,16 @@ dir
 say-fr
 dir
 
-sms
-dir
-
 http_cache
 dir
 
-event_multicast
+sms
 dir
 
 xml-cdr
+dir
+
+event_multicast
 dir
 
 blacklist

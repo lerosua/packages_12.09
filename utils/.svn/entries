@@ -1,7 +1,7 @@
 10
 
 dir
-34389
+34398
 svn://svn.openwrt.org/openwrt/branches/packages_12.09/utils
 svn://svn.openwrt.org/openwrt
 
@@ -68,10 +68,10 @@ dir
 valgrind
 dir
 
-usbutils
+heyu
 dir
 
-heyu
+usbutils
 dir
 
 flashrom
@@ -80,25 +80,25 @@ dir
 dmidecode
 dir
 
-remind
-dir
-
 boxbackup
 dir
 
-pwgen
-dir
-
-gnupg
+remind
 dir
 
 lvm2
 dir
 
-calvaria
+gnupg
+dir
+
+pwgen
 dir
 
 cryptsetup
+dir
+
+calvaria
 dir
 
 dtach
@@ -110,10 +110,10 @@ dir
 ntfsprogs
 dir
 
-lcdproc
+avrusbboot
 dir
 
-avrusbboot
+lcdproc
 dir
 
 rcs
@@ -218,10 +218,10 @@ dir
 alsa-utils
 dir
 
-sierra-pcmcia
+dstat
 dir
 
-dstat
+sierra-pcmcia
 dir
 
 gnokii
@@ -230,10 +230,10 @@ dir
 tar
 dir
 
-gnuplot
+cmdpad
 dir
 
-cmdpad
+gnuplot
 dir
 
 gawk
@@ -245,10 +245,10 @@ dir
 mc
 dir
 
-gadgetfs-test
+calcurse
 dir
 
-calcurse
+gadgetfs-test
 dir
 
 lm-sensors
@@ -272,10 +272,10 @@ dir
 byobu
 dir
 
-ssldump
+unrar
 dir
 
-unrar
+ssldump
 dir
 
 reiserfsprogs
@@ -284,10 +284,10 @@ dir
 psmisc
 dir
 
-devmem2
+cwiid
 dir
 
-cwiid
+devmem2
 dir
 
 bonnie++
@@ -317,22 +317,22 @@ dir
 upx
 dir
 
-joe
-dir
-
 fxload
 dir
 
-fancontroled
+joe
 dir
 
 haserl
 dir
 
-firmwarehotplug
+fancontroled
 dir
 
 pipacs
+dir
+
+firmwarehotplug
 dir
 
 kmemtrace-user
@@ -347,64 +347,64 @@ dir
 lirc
 dir
 
-avrdude
+boblight
 dir
 
 sg3-utils
 dir
 
-boblight
+avrdude
 dir
 
 setserial
 dir
 
-bsdiff
-dir
-
 rrdcollect
 dir
 
-dialog
+bsdiff
 dir
 
 dosfstools
 dir
 
-mksh
+dialog
 dir
 
 clish
 dir
 
-haveged
+mksh
 dir
 
 anyremote
 dir
 
-triggerhappy
+haveged
 dir
 
 memtester
 dir
 
-schedtools
+triggerhappy
 dir
 
-lmbench
+schedtools
 dir
 
 bluez-hcidump
 dir
 
-deco
+lmbench
+dir
+
+klish
 dir
 
 sysstat
 dir
 
-klish
+deco
 dir
 
 pcmciautils

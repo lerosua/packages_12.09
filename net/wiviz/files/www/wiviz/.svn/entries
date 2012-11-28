@@ -1,7 +1,7 @@
 10
 
 dir
-34389
+34398
 svn://svn.openwrt.org/openwrt/branches/packages_12.09/net/wiviz/files/www/wiviz
 svn://svn.openwrt.org/openwrt
 
@@ -25,40 +25,6 @@ nico
 
 
 3c298f89-4303-0410-b956-a3cf2f4a3e73
-
-station-idle.png
-file
-
-
-
-
-2012-11-26T22:48:42.000000Z
-a4ff662d6fc25e73c9f267e29fdac549
-2005-12-16T14:49:45.734666Z
-2704
-kaloz
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1778
 
 ap-idle.gif
 file
@@ -94,6 +60,40 @@ has-props
 
 812
 
+station-idle.png
+file
+
+
+
+
+2012-11-26T22:48:42.000000Z
+a4ff662d6fc25e73c9f267e29fdac549
+2005-12-16T14:49:45.734666Z
+2704
+kaloz
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1778
+
 adhoc.gif
 file
 
@@ -128,40 +128,6 @@ has-props
 
 451
 
-wiviz.js
-file
-
-
-
-
-2012-11-26T22:48:42.000000Z
-3189b7789fc404ce7035e309f9750d07
-2009-04-17T15:22:00.575847Z
-15247
-nico
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-8183
-
 ap.png
 file
 
@@ -195,6 +161,40 @@ has-props
 
 
 1825
+
+wiviz.js
+file
+
+
+
+
+2012-11-26T22:48:42.000000Z
+3189b7789fc404ce7035e309f9750d07
+2009-04-17T15:22:00.575847Z
+15247
+nico
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+8183
 
 station.gif
 file
@@ -332,40 +332,6 @@ has-props
 
 190
 
-adhoc-idle.gif
-file
-
-
-
-
-2012-11-26T22:48:42.000000Z
-a76bc994abe3e224bbc82e6eddd286cf
-2005-12-16T14:49:45.734666Z
-2704
-kaloz
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-332
-
 ap-wep.gif
 file
 
@@ -399,6 +365,40 @@ has-props
 
 
 1455
+
+adhoc-idle.gif
+file
+
+
+
+
+2012-11-26T22:48:42.000000Z
+a76bc994abe3e224bbc82e6eddd286cf
+2005-12-16T14:49:45.734666Z
+2704
+kaloz
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+332
 
 ap-idle.png
 file

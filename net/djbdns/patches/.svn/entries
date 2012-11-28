@@ -1,7 +1,7 @@
 10
 
 dir
-34389
+34398
 svn://svn.openwrt.org/openwrt/branches/packages_12.09/net/djbdns/patches
 svn://svn.openwrt.org/openwrt
 
@@ -94,14 +94,14 @@ nbd
 
 2462
 
-240-tinydns-alias-chain-truncation.patch
+040-dnscache-less-chatty-log.patch
 file
 
 
 
 
 2012-11-26T22:48:56.000000Z
-9d193fbcd060f95a5b2f6b03ff10c85a
+6f5d46c13d86832a800f6e672f5bd991
 2009-09-22T08:45:48.796446Z
 17673
 nbd
@@ -126,7 +126,7 @@ nbd
 
 
 
-2151
+786
 
 090-tinydns-one-second.patch
 file
@@ -162,14 +162,14 @@ nbd
 
 835
 
-040-dnscache-less-chatty-log.patch
+240-tinydns-alias-chain-truncation.patch
 file
 
 
 
 
 2012-11-26T22:48:56.000000Z
-6f5d46c13d86832a800f6e672f5bd991
+9d193fbcd060f95a5b2f6b03ff10c85a
 2009-09-22T08:45:48.796446Z
 17673
 nbd
@@ -194,7 +194,7 @@ nbd
 
 
 
-786
+2151
 
 110-dnscache-cachestats.patch
 file
@@ -264,40 +264,6 @@ nbd
 
 283
 
-230-tinydns-data-semantic-error.patch
-file
-
-
-
-
-2012-11-26T22:48:56.000000Z
-f1fb243c9ddcce96a1fd3d49132a7fd8
-2009-09-22T08:45:48.796446Z
-17673
-nbd
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-5172
-
 220-dnscacheip-space-separator.patch
 file
 
@@ -332,14 +298,14 @@ nbd
 
 278
 
-020-dnsroots-update.patch
+230-tinydns-data-semantic-error.patch
 file
 
 
 
 
 2012-11-26T22:48:56.000000Z
-6ed586e02cd79846f0bbaf027627cbf3
+f1fb243c9ddcce96a1fd3d49132a7fd8
 2009-09-22T08:45:48.796446Z
 17673
 nbd
@@ -364,7 +330,7 @@ nbd
 
 
 
-284
+5172
 
 310-bugfix-dnscache-merge-outgoing-requests.patch
 file
@@ -400,6 +366,40 @@ nbd
 
 9125
 
+020-dnsroots-update.patch
+file
+
+
+
+
+2012-11-26T22:48:56.000000Z
+6ed586e02cd79846f0bbaf027627cbf3
+2009-09-22T08:45:48.796446Z
+17673
+nbd
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+284
+
 050-tinydns-mmap-leak.patch
 file
 
@@ -434,40 +434,6 @@ nbd
 
 551
 
-270-dnscache-sigpipe-fix.patch
-file
-
-
-
-
-2012-11-26T22:48:56.000000Z
-22aedc57e0e07f69da8012636644bb05
-2009-09-22T08:45:48.796446Z
-17673
-nbd
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-327
-
 010-crosscompile.patch
 file
 
@@ -501,6 +467,40 @@ nbd
 
 
 4126
+
+270-dnscache-sigpipe-fix.patch
+file
+
+
+
+
+2012-11-26T22:48:56.000000Z
+22aedc57e0e07f69da8012636644bb05
+2009-09-22T08:45:48.796446Z
+17673
+nbd
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+327
 
 080-dnscache-cache-negatives.patch
 file
