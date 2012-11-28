@@ -11,7 +11,7 @@ PKG_VERSION:=1.16.0
 PKG_RELEASE:=1
 
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.bz2
-PKG_SOURCE_URL:=@SF/aria2
+PKG_SOURCE_URL:=https://github.com/downloads/shenrui01/openwrt-mybox
 PKG_MD5SUM:=5f106ef6ae5fca420c541a9ffec52a26
 PKG_INSTALL:=1
 
