@@ -32,6 +32,10 @@ define Package/aria2/description
  utility
 endef
 
+define Package/aria2/conffiles
+/etc/config/aria2
+endef
+
 CONFIGURE_ARGS += \
 	--disable-nls \
 	--without-gnutls \
@@ -52,11 +56,6 @@ CONFIGURE_VARS += \
 define Package/aria2/install
 	$(INSTALL_DIR) $(1)/usr/bin
 	$(INSTALL_BIN) $(PKG_INSTALL_DIR)/usr/bin/aria2c $(1)/usr/bin
-	$(INSTALL_DIR) $(1)/etc/init.d
-	$(INSTALL_DIR) $(1)/etc/config
-	$(INSTALL_BIN) ./files/etc/Init/Aria2_Init.init 	$(1)/etc/init.d/Aria2_Init
-	$(CP)		./files/etc/Config/Aria2_Config		$(1)/etc/config/Aria2_Config
-
 endef
 
 $(eval $(call BuildPackage,aria2))
