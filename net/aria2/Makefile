@@ -12,6 +12,7 @@ PKG_RELEASE:=1
 
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.bz2
 PKG_SOURCE_URL:=git://github.com/tatsuhiro-t/aria2.git
+PKG_SOURCE_PROTO:=git
 PKG_FIXUP:=autoreconf
 PKG_INSTALL:=1
 
