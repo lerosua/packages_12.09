@@ -1,0 +1,40 @@
+--- a/src/AbstractDiskWriter.cc	2012-11-29 08:20:48.000000000 +0800
++++ b/src/AbstractDiskWriter.cc	2012-11-30 19:06:33.000000000 +0800
+@@ -314,20 +314,24 @@
+       }
+     } else {
+       int64_t filesize = size();
+-      if(static_cast<int64_t>(len + offset) <= filesize) {
+-        mapaddr_ = reinterpret_cast<unsigned char*>
+-          (mmap(0, size(), PROT_READ | PROT_WRITE, MAP_SHARED, fd_, 0));
+-        if(mapaddr_) {
+-          A2_LOG_DEBUG(fmt("mmap for file %s succeeded, length=%" PRId64 "",
+-                           filename_.c_str(),
+-                           static_cast<uint64_t>(filesize)));
+-          maplen_ = filesize;
+-        } else {
+-          int errNum = errno;
+-          A2_LOG_INFO(fmt("mmap for file %s failed: %s",
+-                          filename_.c_str(), strerror(errNum)));
+-          enableMmap_ = false;
++      if(filesize <= INT32_MAX) {
++        if(static_cast<int64_t>(len + offset) <= filesize) {
++          mapaddr_ = reinterpret_cast<unsigned char*>
++            (mmap(0, size(), PROT_READ | PROT_WRITE, MAP_SHARED, fd_, 0));
++          if(mapaddr_) {
++            A2_LOG_DEBUG(fmt("mmap for file %s succeeded, length=%" PRId64 "",
++                             filename_.c_str(),
++                             static_cast<uint64_t>(filesize)));
++            maplen_ = filesize;
++          } else {
++            int errNum = errno;
++            A2_LOG_INFO(fmt("mmap for file %s failed: %s",
++                            filename_.c_str(), strerror(errNum)));
++            enableMmap_ = false;
++          }
+         }
++      } else {
++        enableMmap_ = false;
+       }
+     }
+   }
