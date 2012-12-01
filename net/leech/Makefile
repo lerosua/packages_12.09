@@ -12,7 +12,6 @@ define Package/leech
   TITLE:=leech PT RSS RA MOD
   CATEGORY:=Network
   SUBMENU:=File Transfer
-  MAINTAINER:=hevanysj@126.com
   DEPENDS=+xsltproc +aria2 +wget
   PKGARCH:=all
 endef
