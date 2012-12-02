@@ -17,7 +17,7 @@
 -          A2_LOG_INFO(fmt("mmap for file %s failed: %s",
 -                          filename_.c_str(), strerror(errNum)));
 -          enableMmap_ = false;
-+      if(filesize > 4294967296) {
++      if(filesize > 2147483647) {
 +        enableMmap_ = false;
 +      } else {
 +          if(static_cast<int64_t>(len + offset) <= filesize) {
