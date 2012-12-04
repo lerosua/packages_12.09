@@ -12,7 +12,7 @@ PKG_RELEASE:=1
 
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.bz2
 PKG_SOURCE_URL:=https://github.com/downloads/shenrui01/openwrt-mybox
-PKG_MD5SUM:=85414faed229042b37306ca10ad64c5f
+PKG_MD5SUM:=c5a7c24a65fb4b3e3d9f26c434b0b576
 PKG_INSTALL:=1
 
 include $(INCLUDE_DIR)/package.mk
