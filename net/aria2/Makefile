@@ -7,12 +7,12 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=aria2
-PKG_VERSION:=1.16.0.2
+PKG_VERSION:=1.16.0.3
 PKG_RELEASE:=1
 
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.bz2
 PKG_SOURCE_URL:=https://github.com/downloads/shenrui01/openwrt-mybox
-PKG_MD5SUM:=00bfceca0cdcd891464daebe2dcdc561
+PKG_MD5SUM:=bf8ce883a4e9513636f1cb3a06628ba6
 PKG_INSTALL:=1
 
 include $(INCLUDE_DIR)/package.mk
