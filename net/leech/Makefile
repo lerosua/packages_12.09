@@ -32,10 +32,6 @@ define Build/Compile
 endef
 
 define Package/leech/install
-	$(INSTALL_DIR) $(1)/etc/config
-	$(INSTALL_DATA) ./files/RSS.config $(1)/etc/config/RSS
-	$(INSTALL_DIR) $(1)/etc/init.d
-	$(INSTALL_BIN) ./files/RSS.init $(1)/etc/init.d/RSS
 	$(INSTALL_DIR) $(1)/etc/RSS
 	$(INSTALL_DATA) ./files/feeds $(1)/etc/RSS/feeds
 	$(INSTALL_DIR) $(1)/etc/RSS
