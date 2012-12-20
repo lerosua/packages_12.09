@@ -113,7 +113,7 @@ endef
 
 define Package/transmission-web/install
 	$(INSTALL_DIR) $(1)/usr/share/transmission
-	$(CP) $(PKG_INSTALL_DIR)/usr/share/transmission/web $(1)/usr/share/transmission/
+	$(CP) files/web $(1)/usr/share/transmission/
 endef
 
 $(eval $(call BuildPackage,transmission-daemon))
