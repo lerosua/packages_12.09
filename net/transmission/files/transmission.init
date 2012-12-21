@@ -85,7 +85,7 @@ start_instance() {
 	echo "}" >> $config_file
 
 	SERVICE_UID="$user" \
-	service_start /usr/bin/transmission-daemon -g $config_dir
+	service_start /usr/bin/transmission-daemon -g $config_dir --logfile /var/log/transmission-daemon.log
 }
 
 stop_instance() {
