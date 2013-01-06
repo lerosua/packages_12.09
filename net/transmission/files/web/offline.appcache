@@ -5,7 +5,10 @@ CACHE:
 index.html
 images/favicon.ico
 images/favicon.png
-images/webclip-icon.png
+images/webclip-icon.jpg
+javascript/jquery/jquery.min.js
+javascript/jquery/json2.min.js
+javascript/jquery/jqueryui-1.8.16.min.js
 javascript/jquery/jquery.transmenu.min.js
 javascript/jquery/jquery.contextmenu.min.js
 javascript/jquery/jquery.form.min.js
@@ -20,6 +23,7 @@ javascript/file-row.js
 javascript/dialog.js
 javascript/formatter.js
 javascript/notifications.js
+style/jqueryui/jqueryui-1.8.16.css
 style/transmission/mobile.css
 style/transmission/common.css
 style/transmission/images/buttons/torrent_buttons.png
@@ -37,7 +41,7 @@ style/transmission/images/inspector-info.png
 style/transmission/images/inspector-peers.png
 style/transmission/images/inspector-trackers.png
 style/transmission/images/lock_icon.png
-style/transmission/images/logo.png
+style/transmission/images/logo.jpg
 style/transmission/images/progress.png
 style/transmission/images/settings.png
 style/transmission/images/toolbar-close.png
@@ -47,5 +51,12 @@ style/transmission/images/toolbar-pause-all.png
 style/transmission/images/toolbar-pause.png
 style/transmission/images/toolbar-start-all.png
 style/transmission/images/toolbar-start.png
-web/style/transmission/images/turtle.png
+style/transmission/images/turtle.png
 style/transmission/images/wrench.png
+style/jqueryui/images/ui-bg_flat_75_ffffff_40x100.png
+style/jqueryui/images/ui-bg_glass_65_ffffff_1x400.png
+style/jqueryui/images/ui-bg_glass_75_dadada_1x400.png
+style/jqueryui/images/ui-bg_glass_75_e6e6e6_1x400.png
+style/jqueryui/images/ui-bg_highlight-soft_75_cccccc_1x100.png
+style/jqueryui/images/ui-icons_222222_256x240.png
+style/jqueryui/images/ui-icons_454545_256x240.png
