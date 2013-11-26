@@ -11,6 +11,5 @@ start() {
 }
 
 stop() {
-        service_stop /usr/bin/ss-redir
+        killall -9 ss-redir
 }
-
