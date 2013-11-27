@@ -114,6 +114,7 @@ define Package/avahi-daemon/conffiles
 /etc/avahi/avahi-daemon.conf
 /etc/avahi/services/http.service
 /etc/avahi/services/ssh.service
+/etc/avahi/services/afpd.service
 endef
 
 define Package/avahi-dnsconfd
@@ -292,6 +293,7 @@ define Package/avahi-daemon/install
 	$(INSTALL_DIR) $(1)/etc/avahi/services
 	$(INSTALL_DATA) ./files/service-http $(1)/etc/avahi/services/http.service
 	$(INSTALL_DATA) ./files/service-ssh $(1)/etc/avahi/services/ssh.service
+	$(INSTALL_DATA) ./files/service-afpd $(1)/etc/avahi/services/afpd.service
 	$(INSTALL_DIR) $(1)/etc/init.d
 	$(INSTALL_BIN) ./files/avahi-daemon.init $(1)/etc/init.d/avahi-daemon
 endef
