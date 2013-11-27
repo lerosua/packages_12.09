@@ -7,6 +7,12 @@ STOP=95
 SERVICE_USE_PID=1
 ADD_FIREWALL=/usr/bin/shadowsocksAddFireWall.sh
 RM_FIREWALL=/usr/bin/shadowsocksRMFireWall.sh
+
+section_enabled() {
+        config_get_bool enabled "$1" 'enabled' 0
+        [ $enabled -gt 0 ]
+}
+
 save_config() {
 	local server
 	local server_port
@@ -60,6 +66,7 @@ save_config() {
 start() {
 	config_load shadowsocks
 	config_foreach save_config shadowsocks
+        section_enabled "$section" || return 1
 	chmod +x /usr/bin/shadowsocksAddFireWall.sh	
 	/usr/bin/shadowsocksAddFireWall.sh	
         service_start /usr/bin/ss-redir -c /etc/config/shadowsocks.json -f /var/run/shadowsocks.pid
