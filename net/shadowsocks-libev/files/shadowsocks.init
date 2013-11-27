@@ -8,10 +8,6 @@ SERVICE_USE_PID=1
 ADD_FIREWALL=/usr/bin/shadowsocksAddFireWall.sh
 RM_FIREWALL=/usr/bin/shadowsocksRMFireWall.sh
 
-section_enabled() {
-        config_get_bool enabled "$1" 'enabled' 0
-        [ $enabled -gt 0 ]
-}
 
 save_config() {
 	local server
@@ -19,13 +15,20 @@ save_config() {
 	local local_port
 	local password
 	local method
+	local enabled
 	
 	config_get server $1 server
 	config_get server_port $1 server_port
 	config_get local_port $1 local_port
 	config_get password $1 password
 	config_get method $1 method
+	config_get enabled $1 enabled
 	
+	echo -e "get enabled value is $enabled"
+	echo -e "get enabled value is $enabled" >/tmp/s.log
+	if [ "$enabled" != "1" ]; then
+		exit 1
+	fi	
 	echo -e "{\n\"server\" : \"$server\"," > /etc/config/shadowsocks.json
 	echo -e "\"server_port\" : $server_port," >>/etc/config/shadowsocks.json
 	echo -e "\"local_port\" : $local_port,">>/etc/config/shadowsocks.json
@@ -66,7 +69,6 @@ save_config() {
 start() {
 	config_load shadowsocks
 	config_foreach save_config shadowsocks
-        section_enabled "$section" || return 1
 	chmod +x /usr/bin/shadowsocksAddFireWall.sh	
 	/usr/bin/shadowsocksAddFireWall.sh	
         service_start /usr/bin/ss-redir -c /etc/config/shadowsocks.json -f /var/run/shadowsocks.pid
