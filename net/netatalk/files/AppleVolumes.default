@@ -1,2 +1,2 @@
 -
-/media TimeMachine allow:root,nobody cnidscheme:dbd option:tm
+/media TimeMachine allow:root,nobody cnidscheme:dbd options:tm
