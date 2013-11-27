@@ -5,11 +5,69 @@ START=95
 STOP=95
 
 SERVICE_USE_PID=1
+ADD_FIREWALL=/usr/bin/shadowsocksAddFireWall.sh
+RM_FIREWALL=/usr/bin/shadowsocksRMFireWall.sh
+save_config() {
+	local server
+	local server_port
+	local local_port
+	local password
+	local method
+	
+	config_get server $1 server
+	config_get server_port $1 server_port
+	config_get local_port $1 local_port
+	config_get password $1 password
+	config_get method $1 method
+	
+	echo -e "{\n\"server\" : \"$server\"," > /etc/config/shadowsocks.json
+	echo -e "\"server_port\" : $server_port," >>/etc/config/shadowsocks.json
+	echo -e "\"local_port\" : $local_port,">>/etc/config/shadowsocks.json
+	echo -e "\"password\" : \"$password\"," >>/etc/config/shadowsocks.json
+	echo -e "\"timeout\" : 60," >>/etc/config/shadowsocks.json
+	echo -e "\"method\" : \"$method\"" >>/etc/config/shadowsocks.json
+	echo -e "}" >>/etc/config/shadowsocks.json
 
+        echo -e "#!/bin/sh" > $ADD_FIREWALL
+        echo -e "iptables -N fuckgfw -t nat" >> $ADD_FIREWALL
+	echo -e "iptables -A fuckgfw -t nat -p tcp -d $server -j RETURN" >> $ADD_FIREWALL
+	echo -e "iptables -A fuckgfw -t nat -p tcp -d 0.0.0.0/8 -j RETURN" >> $ADD_FIREWALL
+	echo -e "iptables -A fuckgfw -t nat -p tcp -d 10.0.0.0/8 -j RETURN" >> $ADD_FIREWALL
+	echo -e "iptables -A fuckgfw -t nat -p tcp -d 127.0.0.0/8 -j RETURN" >> $ADD_FIREWALL
+	echo -e "iptables -A fuckgfw -t nat -p tcp -d 169.254.0.0/16 -j RETURN" >> $ADD_FIREWALL
+	echo -e "iptables -A fuckgfw -t nat -p tcp -d 172.16.0.0/16 -j RETURN" >> $ADD_FIREWALL
+	echo -e "iptables -A fuckgfw -t nat -p tcp -d 192.168.0.0/16 -j RETURN" >> $ADD_FIREWALL
+	echo -e "iptables -A fuckgfw -t nat -p tcp -d 224.0.0.0/4 -j RETURN" >> $ADD_FIREWALL
+	echo -e "iptables -A fuckgfw -t nat -p tcp -d 240.0.0.0/4 -j RETURN" >> $ADD_FIREWALL
+	echo -e "iptables -A fuckgfw -t nat -p tcp -j REDIRECT --to-port 8087" >> $ADD_FIREWALL
+	echo -e "iptables -A OUTPUT  -t nat -p tcp -j fuckgfw" >> $ADD_FIREWALL
+	echo -e "iptables -A prerouting_rule -t nat -m geoip -p tcp ! --destination-country CN -j fuckgfw " >> $ADD_FIREWALL
+	
+        echo -e "#!/bin/sh" > $RM_FIREWALL
+	echo -e "iptables -D fuckgfw -t nat -p tcp -d $server -j RETURN" >> $RM_FIREWALL
+	echo -e "iptables -D fuckgfw -t nat -p tcp -d 0.0.0.0/8 -j RETURN" >> $RM_FIREWALL
+	echo -e "iptables -D fuckgfw -t nat -p tcp -d 10.0.0.0/8 -j RETURN" >> $RM_FIREWALL
+	echo -e "iptables -D fuckgfw -t nat -p tcp -d 127.0.0.0/8 -j RETURN" >> $RM_FIREWALL
+	echo -e "iptables -D fuckgfw -t nat -p tcp -d 169.254.0.0/16 -j RETURN" >> $RM_FIREWALL
+	echo -e "iptables -D fuckgfw -t nat -p tcp -d 172.16.0.0/16 -j RETURN" >> $RM_FIREWALL
+	echo -e "iptables -D fuckgfw -t nat -p tcp -d 192.168.0.0/16 -j RETURN" >> $RM_FIREWALL
+	echo -e "iptables -D fuckgfw -t nat -p tcp -d 224.0.0.0/4 -j RETURN" >> $RM_FIREWALL
+	echo -e "iptables -D fuckgfw -t nat -p tcp -d 240.0.0.0/4 -j RETURN" >> $RM_FIREWALL
+	echo -e "iptables -D fuckgfw -t nat -p tcp -j REDIRECT --to-port 8087" >> $RM_FIREWALL
+	echo -e "iptables -D OUTPUT  -t nat -p tcp -j fuckgfw" >> $RM_FIREWALL
+	echo -e "iptables -D prerouting_rule -t nat -m geoip -p tcp ! --destination-country CN -j fuckgfw " >> $RM_FIREWALL
+}
 start() {
+	config_load shadowsocks
+	config_foreach save_config shadowsocks
+	chmod +x /usr/bin/shadowsocksAddFireWall.sh	
+	/usr/bin/shadowsocksAddFireWall.sh	
         service_start /usr/bin/ss-redir -c /etc/config/shadowsocks.json -f /var/run/shadowsocks.pid
 }
 
 stop() {
+	chmod +x /usr/bin/shadowsocksRMFireWall.sh	
+	/usr/bin/shadowsocksRMFireWall.sh
         killall -9 ss-redir
 }
+
